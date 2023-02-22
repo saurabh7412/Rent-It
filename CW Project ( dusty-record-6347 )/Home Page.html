@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+                           /* Nav Bar  */
+        body{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        #nav{
+            width: 75%;
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+            align-items: center;  
+        }
+        #nav>img{
+            width: 12%;
+        }
+        .dropbtn{
+            border: none;
+            background-color: white;
+            font-size: 15px;
+            color: #313131;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #search{
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid grey;
+            background-color: rgb(240, 247, 250);
+            color: #313131;
+            font-size: 17px;
+            padding: 0px 50px 0px 18px;
+        }
+        #cart{
+            border: none;
+            color: #313131;
+            background-color: white;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .dropdown1 {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn1 {
+            background-color: white;
+            border: 1px solid rgb(154, 154, 154);
+            border-radius: 10px;
+            color: #313131;
+            padding: 10px;
+            font-size: 14px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .dropdown-content1 {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content1 a {
+            color: #313131;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content1 a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown1:hover .dropdown-content1 {
+            display: block;
+        }
+
+                         /* Main Section  */
+
+        #main-section{
+            width: 90%;
+            margin: auto;
+            margin-top: 30px;
+
+        }
+
+        #main-1{
+            display: flex;
+            align-items: center;
+            
+        }
+        #btn1{
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            left: 207px;
+            top: 250px;
+            border-radius: 10px;
+            border: none;
+            background-color: white;
+            color: grey;
+            font-size: 25px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #btn2{
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            right: 207px;
+            top: 250px;
+            border-radius: 10px;
+            border: none;
+            background-color: white;
+            color: grey;
+            font-size: 25px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+       
+        #slider{
+            width: 82%;
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+            align-items: center; 
+        }
+        #slider>img{
+            /* border: 1px solid red; */
+            width: 100%;
+            border-radius: 30px;
+        }
+
+        #banner{
+            display: flex;
+            width: 82%;
+            margin: auto;
+            justify-content:center;
+            font-size: 13px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(213, 232, 239);
+            border-radius: 40px;
+            height: 100px;
+            align-items:last baseline;
+            padding-bottom: 0px;
+            margin-top: -50px;
+            /* position: absolute;
+            top: 300px; */
+        }
+        #banner>img{
+            width: 2%;
+            position: absolute;
+            top: 515px;
+            left: 250px;
+        }
+        #banner>a{
+            margin-left: 30px;
+        }
+        #banner>a:hover{
+            cursor: pointer;
+            color: red;
+        }
+        #main-2{
+            width: 84.5%;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .main-cards{
+            border: 1px solid rgb(207, 207, 207);
+            border-radius: 10px;
+            width: 12%;
+            text-align: center;
+            color: rgb(124, 124, 124);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            padding: 10px 10px 10px 10px;
+        }
+        .main-cards:hover {
+            transform: scale(1.1);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .main-cards>img{
+            width: 40%;
+        }
+
+                          /* Mid section  */
+
+        #mid-section{
+            /* border: 1px solid red; */
+            /* display: flex; */
+            background-color: rgb(215, 215, 215);
+            /* width: 60%; */
+            /* margin:30px 0px 30px auto ; */
+        }
+
+        #mid-sec-1{
+            width: 70%;
+            padding-top: 100px;
+            margin: 60px auto 0px auto;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 35px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #btn3{
+            border: 1px solid rgb(87, 87, 87);
+            background-color: none;
+            border-radius: 50px;
+            font-size: 25px;
+            padding: 12px 20px 12px 20px;
+        }
+        #btn4{
+            border: 1px solid rgb(87, 87, 87);;
+            background-color: none;
+            border-radius: 50px;
+            font-size: 25px;
+            padding: 12px 20px 12px 20px;
+            margin: 10px;
+        }
+
+        #mid-sec-2{
+            width: 70%;
+            margin: auto;
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px; 
+            padding-bottom: 40px;
+        }
+
+        .cards2{
+            /* border: 1px solid blue; */
+            background-color: white;
+            padding: 18px;
+            border-radius: 3px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .cards2>img{
+            width: 100%;
+        }
+        .seemore{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+        }
+        .seemore>button{
+            padding: 0px 10px 0px 10px;
+            background: none;
+            border: 1px solid red;
+            border-radius: 3px;
+            color: red;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .seemore>button:hover{
+            background-color: red;
+            color: white;
+        }
+
+
+    </style>
+
+    
+</head>
+<body>
+    <!-- Nav Bar -->
+
+    <div id="nav">
+        <img src="./RENT IT (2).png" alt="error">
+        <div class="dropdown">
+            <button class="dropbtn">Select A City</button>
+                <!-- <input type="search" placeholder="Search for city" size="60">
+                <div id="city-cards">
+
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Banglore</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Mumbai</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Pune</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Delhi</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Noida</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Gurgaon</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Hyderabad</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Chennai</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Ahmedabad</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Mysore</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Jaipur</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Faridabad</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Ghaziabad</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Gandhinagar</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Chandigarh</h3>
+                    </div>
+                    <div class="city">
+                        <img src="" alt="">
+                        <h3>Kolkata</h3>
+                    </div>
+
+                </div> -->
+        </div>
+        <input type="search" placeholder="Search for products" id="search" size="60">
+
+        <button id="cart">Cart</button>
+
+        <div class="dropdown1">
+            <button class="dropbtn1">Login / Signup</button>
+            <div class="dropdown-content1">
+              <a href="#">My Account</a>
+              <a href="#">My Wishlist</a>
+              <a href="#">Settings</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+    </div>
+
+    <!-- Main Section  -->
+
+    <div id="main-section">
+
+        <div id="main-1">
+                <button id="btn1"><</button>
+                <div id="slider">
+                    <!-- Append Images here -->
+                </div>
+                <button id="btn2">></button>
+        </div>
+
+        <div id="banner">
+            <img src="./icons/corona.svg" alt="error">
+            <p>Safety precautions during COVID-19. We're taking additional steps and precautionary measures to protect our community from COVID-19.</p>
+            <a>Know More ></a>
+        </div>
+
+        <div id="main-2">
+
+            <div class="main-cards">
+                <img src="./icons/package.svg" alt="error">
+                <p>Packages</p>
+            </div>
+            <div class="main-cards">
+                <img src="./icons/bedroom.svg" alt="error">
+                <p>Furniture</p>
+            </div>
+            <div class="main-cards">
+                <img src="./icons/refrigerator.svg" alt="error">
+                <p>Appliances</p>
+            </div>
+            <div class="main-cards">
+                <img src="./icons/mobile.svg" alt="error">
+                <p>Electronics</p>
+            </div>
+            <div class="main-cards">
+                <img src="./icons/treadmill.svg" alt="error">
+                <p>Fitness</p>
+            </div>
+            <div class="main-cards">
+                <img src="./icons/desk.svg" alt="error">
+                <p>WFH Essentials</p>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!-- Middle Section -->
+
+    <div id="mid-section">
+
+        <div id="mid-sec-1">
+            <div>
+                <p>You'll love to <br> take these home</p>
+            </div>
+            <div>
+                <button id="btn3"><</button>   <button id="btn4">></button>
+            </div>
+        </div>
+
+        <div id="mid-sec-2">
+
+            <div class="cards2">
+                <img src="./mid section images/1.jpg" alt="err">
+                <h2>Air Purifier</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+               
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/17.jpg" alt="err">
+                <h2>Atticus Wooden Single Platform Bed (6x3)</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/13.jpg" alt="err">
+                <h2>Morris Office Chair</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/24.jpg" alt="err">
+                <h2>Microwave Solo 20L</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/2.jpg" alt="err">
+                <h2>Single Door Fridge (210 Litre)</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/10.jpg" alt="err">
+                <h2>Rowling Bookshelf Medium</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/10.jpg" alt="err">
+                <h2>Rowling Bookshelf Medium</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/10.jpg" alt="err">
+                <h2>Rowling Bookshelf Medium</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+                     // Main Section  Code 
+
+    let slider = document.getElementById("slider");
+
+    let btn1 = document.getElementById("btn1");
+
+    let btn2 = document.getElementById("btn2");
+    
+    let arr = ["./content images/AirOKWeb (1).png",
+    "./content images/Fitness-offer-banner-for-Web--2.jpg",
+    "./content images/Paytm-Bank-Desktop-banner- (1).jpg",
+    "./content images/RO-web-banner-web-.jpg",
+    "./content images/WP-Web.png"];
+    let i = 0;
+    let img = document.createElement("img");
+    img.setAttribute("src", arr[i++]);
+
+    setInterval(()=>{
+        img.setAttribute("src", arr[i++]);
+        if( i === 5) i=0;
+    },4000)
+    slider.append(img);
+
+   
+    btn1.addEventListener("click",()=>{
+        if(i === 0) i= 4;
+
+        img.setAttribute("src", arr[i--]);
+        slider.append(img);
+    })
+
+    btn2.addEventListener("click",()=>{
+        if(i === 4) i= 0;
+
+        img.setAttribute("src", arr[++i]);
+        slider.append(img);
+    })
+    
+                            // Middle Section Code
+
+                            
+
+</script>
+</html>
