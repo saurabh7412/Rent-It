@@ -195,11 +195,14 @@
             font-size: 12px;
             padding: 10px 10px 10px 10px;
         }
+ day-4
         .main-cards a{
             display: block;
             margin-top: 10px;
             text-decoration: none;
         }
+=======
+ main
         .main-cards:hover {
             transform: scale(1.1);
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -497,7 +500,10 @@
         transform: scale(1.1);
     }
 
+ day-4
 
+=======
+ main
                             /* Login Css */
 
     .popup{
@@ -519,7 +525,10 @@
     #login{
         width: 50%;
         background-color: rgb(236, 248, 255);
+ day-4
         border-radius: 10px;
+=======
+ main
         padding: 30px;
         /* text-align: center; */
     }
@@ -648,7 +657,11 @@
             </div>
             <input type="search" placeholder="Search for products" id="search" size="60">
     
+day-4
             <a style="text-decoration: none;" href="./cart.html" id="cart">Cart</a>
+
+            <button id="cart">Cart</button>
+ main
     
             <div class="dropdown1">
                 <a class="dropbtn1" onclick="openPopup()">Login / Signup</a>
@@ -708,7 +721,11 @@
             </div>
             <div class="main-cards">
                 <img src="./icons/bedroom.svg" alt="error">
+ day-4
                 <a id="furniture" href="./product.html">Furniture</a>
+
+                <p>Furniture</p>
+ main
             </div>
             <div class="main-cards">
                 <img src="./icons/refrigerator.svg" alt="error">
@@ -972,10 +989,13 @@
 
     let btn2 = document.getElementById("btn2");
 
+
     // let furniture = document.getElementById("furniture");
     // furniture.addEventListener("click",()=>{
         
     // })
+=======
+
     
     let arr = ["./content images/AirOKWeb (1).png",
     "./content images/Fitness-offer-banner-for-Web--2.jpg",
@@ -1113,12 +1133,18 @@
     let mobarr = [];
 
     contbtn.addEventListener("click", ()=>{
+ day-4
         if(mobinput.value === "")alert("Please enter a moblie no.");
         else{
         mobarr.push(mobinput.value);
         localStorage.setItem("mobile",mobarr);
         alert("mobile added");
         }
+=======
+        mobarr.push(mobinput.value);
+        localStorage.setItem("mobile",mobarr);
+        alert("mobile added");
+ main
     })
 
     function openPopup(){
