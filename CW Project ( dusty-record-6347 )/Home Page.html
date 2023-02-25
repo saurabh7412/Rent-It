@@ -195,6 +195,17 @@
             font-size: 12px;
             padding: 10px 10px 10px 10px;
         }
+
+
+ day-4
+        .main-cards a{
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+
+
         .main-cards:hover {
             transform: scale(1.1);
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -492,6 +503,10 @@
         transform: scale(1.1);
     }
 
+
+
+
+
                             /* Login Css */
 
     .popup{
@@ -513,6 +528,7 @@
     #login{
         width: 50%;
         background-color: rgb(236, 248, 255);
+
         padding: 30px;
         /* text-align: center; */
     }
@@ -641,7 +657,7 @@
             </div>
             <input type="search" placeholder="Search for products" id="search" size="60">
     
-            <button id="cart">Cart</button>
+
     
             <div class="dropdown1">
                 <a class="dropbtn1" onclick="openPopup()">Login / Signup</a>
@@ -701,7 +717,7 @@
             </div>
             <div class="main-cards">
                 <img src="./icons/bedroom.svg" alt="error">
-                <p>Furniture</p>
+
             </div>
             <div class="main-cards">
                 <img src="./icons/refrigerator.svg" alt="error">
@@ -964,6 +980,7 @@
     let btn1 = document.getElementById("btn1");
 
     let btn2 = document.getElementById("btn2");
+
     
     let arr = ["./content images/AirOKWeb (1).png",
     "./content images/Fitness-offer-banner-for-Web--2.jpg",
@@ -1101,9 +1118,7 @@
     let mobarr = [];
 
     contbtn.addEventListener("click", ()=>{
-        mobarr.push(mobinput.value);
-        localStorage.setItem("mobile",mobarr);
-        alert("mobile added");
+
     })
 
     function openPopup(){
