@@ -1,0 +1,49 @@
+[{"id":1,"title":"Outdoors","image":"./mid section images/1.jpg","rate":"$1.81","days":4},
+
+{"id":2,"title":"Automotive","image":"./mid section images/2.jpg","rate":"$6.36","days":3},
+
+{"id":3,"title":"Music","image":"./mid section images/3.jpg","rate":"$1.30","days":3},
+
+{"id":4,"title":"Garden","image":"./mid section images/4.jpg","rate":"$9.15","days":3},
+
+{"id":5,"title":"Sports","image":"./mid section images/5.jpg","rate":"$5.33","days":1},
+
+{"id":6,"title":"Tools","image":"./mid section images/6.jpg","rate":"$8.99","days":2},
+
+{"id":7,"title":"Computers","image":"./mid section images/7.jpg","rate":"$2.16","days":1},
+
+{"id":8,"title":"Computers","image":"./mid section images/8.jpg","rate":"$0.42","days":3},
+
+{"id":9,"title":"Jewelry","image":"./mid section images/9.jpg","rate":"$0.91","days":3},
+
+{"id":10,"title":"Health","image":"./mid section images/10.jpg","rate":"$5.10","days":1},
+
+{"id":11,"title":"Tools","image":"./mid section images/11.jpg","rate":"$6.01","days":1},
+
+{"id":12,"title":"Music","image":"./mid section images/12.jpg","rate":"$6.91","days":1},
+
+{"id":13,"title":"Tools","image":"./mid section images/13.jpg","rate":"$8.60","days":1},
+
+{"id":14,"title":"Beauty","image":"./mid section images/14.jpg","rate":"$7.12","days":3},
+
+{"id":15,"title":"Garden","image":"./mid section images/15.jpg","rate":"$9.17","days":1},
+
+{"id":16,"title":"Beauty","image":"./mid section images/16.jpg","rate":"$3.10","days":3},
+
+{"id":17,"title":"Music","image":"./mid section images/17.jpg","rate":"$3.39","days":1},
+
+{"id":18,"title":"Health","image":"./mid section images/18.jpg","rate":"$6.51","days":3},
+
+{"id":19,"title":"Home","image":"./mid section images/19.jpg","rate":"$3.06","days":2},
+
+{"id":20,"title":"Electronics","image":"./mid section images/20.jpg","rate":"$6.33","days":2},
+
+{"id":21,"title":"Books","image":"./mid section images/21.jpg","rate":"$0.92","days":2},
+
+{"id":22,"title":"Health","image":"./mid section images/22.jpg","rate":"$7.78","days":3},
+
+{"id":23,"title":"Movies","image":"./mid section images/23.jpg","rate":"$0.31","days":3},
+
+{"id":24,"title":"Outdoors","image":"./mid section images/24.jpg","rate":"$9.30","days":3},
+
+{"id":25,"title":"Games","image":"./mid section images/25.jpg","rate":"$8.91","days":2}]

@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+                           /* Nav Bar  */
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px 0px 0px 0px;
+        }
+        #navcont{
+            width: 100%;
+            background-color: white;
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #nav{
+            width: 75%;
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+            align-items: center;  
+        }
+        #nav>img{
+            width: 12%;
+        }
+        .dropbtn{
+            border: none;
+            background-color: white;
+            font-size: 15px;
+            color: #313131;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #search{
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid grey;
+            background-color: rgb(240, 247, 250);
+            color: #313131;
+            font-size: 17px;
+            padding: 0px 50px 0px 18px;
+        }
+        #cart{
+            border: none;
+            color: #313131;
+            background-color: white;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .dropdown1 {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn1 {
+            background-color: rgba(209, 13, 13, 0.882);
+            border: 1px solid rgb(154, 154, 154);
+            border-radius: 10px;
+            color: white;
+            padding: 10px 15px 10px 15px;
+            font-size: 14px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .dropbtn1:hover{
+            color: rgba(209, 13, 13, 0.882);
+            background-color: white;
+        }
+        .dropdown-content1 {
+            display: none;
+            position: absolute;
+            top: 30px;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content1 a {
+            color: #313131;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content1 a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown1:hover .dropdown-content1 {
+            display: block;
+        }
+
+                         /* Main Section  */
+
+        #main-section{
+            width: 90%;
+            margin: auto;
+            padding-top: 50px;
+
+        }
+
+        #main-1{
+            display: flex;
+            align-items: center;
+            
+        }
+        #btn1{
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            left: 200px;
+            top: 300px;
+            border-radius: 10px;
+            border: none;
+            background-color: white;
+            color: grey;
+            font-size: 25px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #btn2{
+            width: 30px;
+            height: 50px;
+            position: absolute;
+            right: 200px;
+            top: 300px;
+            border-radius: 10px;
+            border: none;
+            background-color: white;
+            color: grey;
+            font-size: 25px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+       
+        #slider{
+            width: 82%;
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+            align-items: center; 
+        }
+        #slider>img{
+            /* border: 1px solid red; */
+            width: 100%;
+            border-radius: 30px;
+        }
+
+        #banner{
+            display: flex;
+            width: 82%;
+            margin: auto;
+            justify-content:center;
+            font-size: 13px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(213, 232, 239);
+            border-radius: 40px;
+            height: 100px;
+            align-items:last baseline;
+            padding-bottom: 0px;
+            margin-top: -50px;
+            /* position: absolute;
+            top: 300px; */
+        }
+        #banner>img{
+            width: 2%;
+            position: absolute;
+            top: 535px;
+            left: 240px;
+        }
+        #banner>a{
+            margin-left: 30px;
+        }
+        #banner>a:hover{
+            cursor: pointer;
+            color: red;
+        }
+        #main-2{
+            width: 84.5%;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .main-cards{
+            border: 1px solid rgb(207, 207, 207);
+            border-radius: 10px;
+            width: 12%;
+            text-align: center;
+            color: rgb(124, 124, 124);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            padding: 10px 10px 10px 10px;
+        }
+        .main-cards a{
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+        .main-cards:hover {
+            transform: scale(1.1);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .main-cards>img{
+            width: 40%;
+        }
+
+                          /* Mid section  */
+
+        #mid-section{
+            /* border: 1px solid red; */
+            /* display: flex; */
+            background-color: rgb(215, 215, 215);
+            /* width: 60%; */
+            /* margin:30px 0px 30px auto ; */
+        }
+
+        #mid-sec-1{
+            width: 70%;
+            padding-top: 100px;
+            margin: 60px auto 0px auto;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 35px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #btn3{
+            border: 1px solid rgb(87, 87, 87);
+            background-color: none;
+            border-radius: 50px;
+            font-size: 25px;
+            padding: 12px 20px 12px 20px;
+        }
+        #btn4{
+            border: 1px solid rgb(87, 87, 87);;
+            background-color: none;
+            border-radius: 50px;
+            font-size: 25px;
+            padding: 12px 20px 12px 20px;
+            margin: 10px;
+        }
+
+        #mid-sec-2{
+            width: 70%;
+            margin: auto;
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px; 
+            padding-bottom: 40px;
+        }
+
+        .cards2{
+            /* border: 1px solid blue; */
+            background-color: white;
+            padding: 18px;
+            border-radius: 3px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .cards2>img{
+            width: 100%;
+        }
+        .seemore{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+        }
+        .seemore>button{
+            padding: 0px 10px 0px 10px;
+            background: none;
+            border: 1px solid red;
+            border-radius: 3px;
+            color: red;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .seemore>button:hover{
+            background-color: red;
+            color: white;
+        }
+
+                                /* Bottom Section  */
+        #bottom-section{
+            padding-bottom: 40px;
+        }
+        #bottom-section>a{
+            color: rgb(33, 196, 217);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 225px;
+        }
+        #ptag,#ptag2{
+            width: 70%;
+            padding-top: 100px;
+            margin: 10px auto 0px auto;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 35px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(114, 113, 113);
+        }
+        #ptag3{
+            width: 70%;
+            padding-top: 30px;
+            margin: auto;
+            /* border: 1px solid red; */
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(157, 157, 157);
+        }
+        #bottombtn1{
+            margin-top: 30px;
+            margin-left: 65px;
+            border: 1px solid rgb(87, 87, 87);
+            background-color: none;
+            border-radius: 50px;
+            font-size: 25px;
+            padding: 12px 20px 12px 20px;
+        }
+        #bottombtn2{
+            border: 1px solid rgb(87, 87, 87);;
+            background-color: none;
+            border-radius: 50px;
+            font-size: 25px;
+            padding: 12px 20px 12px 20px;
+            margin: 10px;
+        }
+        #bottom-cont1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 70%;
+            margin: 30px auto 30px auto;
+            gap: 30px 60px;
+            font-size: 15px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .bottom-cards>img{
+            width: 20%;
+            margin-top: 20px;
+        }
+        .bottom-cards>h2{
+            color: rgb(114, 113, 113);
+        }
+        .bottom-cards>p{
+            color: rgb(157, 157, 157);
+        }
+
+        #bottom-cont2{
+            /* border: 2px solid green; */
+            /* height: 700px; */
+            display: flex;
+            /* margin: auto; */
+            margin-top: 80px;
+            margin-right: 200px;
+            margin-left: -50px;
+            justify-content: space-around;
+            
+        }
+        #bottom-cont2-div1{
+            /* border: 1px solid blue; */
+            margin-left: 160px;
+            width: 30%;
+        }
+        #bottom-cont2-div2{
+            width:45%;
+            margin-top: 110px;
+            background-color: rgb(246, 246, 246);
+            border-radius: 20px;
+            /* display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px; */
+        }
+        .bottom-cont2-div2-cards{
+            /* border: 1px solid red; */
+            padding: 80px;  
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            color: rgb(157, 157, 157);
+            font-size: 20px;
+        }
+
+        .bottom-cont2-div2-img{
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+        .bottom-cont2-div2-img>img{
+            border-radius: 50px;
+            margin-right: 30px;
+        }
+
+                                        /* Footer  */
+
+    .fontawesomesvg {width: 1em;
+      height: 1em;
+      vertical-align: -.125em;
+      margin-right: 20px;
+    }
+
+    #footer{
+        padding-top: 50px;
+        background-color: rgb(246, 246, 246);
+        margin-top: 50px;
+    }
+    #footer1{
+        /* border: 2px solid green; */
+        width: 80%;
+        margin: auto;
+        margin-top: 70px;
+        padding-bottom: 70px;
+    }
+    #footer1>h4{
+        color: rgb(113, 113, 113);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14px;
+    }
+    #footer1>p,a{
+        color: rgb(113, 113, 113);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 14px;
+    }
+    #footer2{
+        /* border: 2px solid blue; */
+        width: 80%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        padding-bottom: 70px;
+    }
+    .footer2card{
+        width: 23%;
+        /* border: 1px solid red; */
+    }
+    #planelogo{
+        display: flex;
+
+        align-items: center;
+    }
+    .footer2card>a,label{
+        display: block;
+        margin: 20px auto 20px auto;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+    }
+    #footer2images>img{
+        width: 45%;
+        margin: 10px 5px 10px 0px;
+    }
+    #chatwithus{
+        border: 1px solid grey;
+        padding: 10px 20px 10px 20px;
+        border-radius: 5px;
+        margin-right: 80px;
+    }
+    #footer3{
+        width: 80%;
+        display: flex;
+        margin: auto;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    #footer3>label{
+        /* margin-right: 400px; */
+        width: 40%;
+        color: grey;
+        font-size: 14px;
+    }
+    #footer3>a{
+        width: 35%;
+        text-align: end;
+        text-decoration: none;
+    }
+    #footer3icons{
+        width: 30%;
+        margin: auto;
+    }
+    #footer3icons>img{
+        width: 10%;
+        margin-right: 20px;
+    }
+    #chatbot{
+        width: 4%;
+        border-radius: 50px;
+        position: fixed;
+        left: 10px;
+        bottom: 10px;
+    }
+    #chatbot:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+
+                            /* Login Css */
+
+    .popup{
+        width: 100%;
+        display: flex;
+        /* margin: auto;  */
+        width: 800px;
+        position: absolute;
+        top: 400%;
+        left: -700%;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        background-color: #ddd;
+        visibility: hidden;
+    }
+    .open-popup{
+        visibility: visible;
+    }
+    #login{
+        width: 50%;
+        background-color: rgb(236, 248, 255);
+        border-radius: 10px;
+        padding: 30px;
+        /* text-align: center; */
+    }
+    #login>h3{
+        font-size: 15px;
+        margin-top: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-bottom: 30px;
+    }
+    #loginimg>img{
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    #mob{
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        display: block;
+    }
+    .contbtn{
+        display: flex;
+        margin: auto;
+        background-color: rgba(192, 12, 12, 0.922);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        margin-top: 350px;
+        height: 50px;
+        width: 100%;
+        padding: 5px 50px 15px 90px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+    }
+    #crossbtn{
+        display: flex;
+        justify-content: end;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    </style>
+
+    
+</head>
+
+<body>
+    <!-- Nav Bar -->
+
+    <div id="navcont">
+        <div id="nav">
+            <img src="./RENT IT (2).png" alt="error">
+            <div class="dropdown">
+                <button class="dropbtn">Select A City</button>
+                    <!-- <input type="search" placeholder="Search for city" size="60">
+                    <div id="city-cards">
+    
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Banglore</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Mumbai</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Pune</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Delhi</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Noida</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Gurgaon</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Hyderabad</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Chennai</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Ahmedabad</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Mysore</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Jaipur</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Faridabad</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Ghaziabad</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Gandhinagar</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Chandigarh</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Kolkata</h3>
+                        </div>
+    
+                    </div> -->
+            </div>
+            <input type="search" placeholder="Search for products" id="search" size="60">
+    
+            <a style="text-decoration: none;" href="./cart.html" id="cart">Cart</a>
+    
+            <div class="dropdown1">
+                <a class="dropbtn1" onclick="openPopup()">Login / Signup</a>
+
+                <div class="popup" id="popup">
+
+                    <!-- add everything we need on login page here  -->
+                    <div id="loginimg">
+                        <img src="./icons/login cat.jpg" alt="err"> 
+                    </div>
+                    <div id="login">
+                        <a id="crossbtn" onclick="closePopup()">X</a>
+                        <h3>Enter your number to <br> Signup or Login</h3>
+                        <input type="text" id="mob" placeholder="Enter your phone number*">
+                        <button class="contbtn">Continue</button>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="dropdown-content1">
+                  <a href="#">My Account</a>
+                  <a href="#">My Wishlist</a>
+                  <a href="#">Settings</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+
+    <!-- Main Section  -->
+
+    <div id="main-section">
+
+        <div id="main-1">
+                <button id="btn1"><</button>
+                <div id="slider">
+                    <!-- Append Images here -->
+                </div>
+                <button id="btn2">></button>
+        </div>
+
+        <div id="banner">
+            <img src="./icons/corona.svg" alt="error">
+            <p>Safety precautions during COVID-19. We're taking additional steps and precautionary measures to protect our community from COVID-19.</p>
+            <a>Know More ></a>
+        </div>
+
+        <div id="main-2">
+
+            <div class="main-cards">
+                <img src="./icons/package.svg" alt="error">
+                <p>Packages</p>
+            </div>
+            <div class="main-cards">
+                <img src="./icons/bedroom.svg" alt="error">
+                <a id="furniture" href="./product.html">Furniture</a>
+            </div>
+            <div class="main-cards">
+                <img src="./icons/refrigerator.svg" alt="error">
+                <p>Appliances</p>
+            </div>
+            <div class="main-cards">
+                <img src="./icons/mobile.svg" alt="error">
+                <p>Electronics</p>
+            </div>
+            <div class="main-cards">
+                <img src="./icons/treadmill.svg" alt="error">
+                <p>Fitness</p>
+            </div>
+            <div class="main-cards">
+                <img src="./icons/desk.svg" alt="error">
+                <p>WFH Essentials</p>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!-- Middle Section -->
+
+    <div id="mid-section">
+
+        <div id="mid-sec-1">
+            <div>
+                <p>You'll love to <br> take these home</p>
+            </div>
+            <div>
+                <button id="btn3"><</button>   <button id="btn4">></button>
+            </div>
+        </div>
+
+        <div id="mid-sec-2">
+
+            <div class="cards2">
+                <img src="./mid section images/1.jpg" alt="err">
+                <h2>Air Purifier</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+               
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/17.jpg" alt="err">
+                <h2>Atticus Wooden Single Platform Bed (6x3)</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/13.jpg" alt="err">
+                <h2>Morris Office Chair</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/24.jpg" alt="err">
+                <h2>Microwave Solo 20L</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/2.jpg" alt="err">
+                <h2>Single Door Fridge (210 Litre)</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/10.jpg" alt="err">
+                <h2>Rowling Bookshelf Medium</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/10.jpg" alt="err">
+                <h2>Rowling Bookshelf Medium</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="cards2">
+                <img src="./mid section images/10.jpg" alt="err">
+                <h2>Rowling Bookshelf Medium</h2>
+                <label >Rent</label>
+                <div class="seemore">
+                    <p>₹ 469/mo</p>
+                    <button>See More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Section -->
+
+    <div id="bottom-section">
+        <div id="ptag">
+            <p>There's more <br> to renting</p>
+        </div>
+
+        <div id="bottom-cont1">
+
+            <div class="bottom-cards">
+                <img src="./bottom section images/quality.svg" alt="err">
+                <h2>Finest-quality prodcuts</h2>
+                <p>Quality matters to you, and us! That's why we do a strict quality-check for every product.</p>
+            </div>
+            <div class="bottom-cards">
+                <img src="./bottom section images/location.svg" alt="err">
+                <h2>Free relocation</h2>
+                <p>Changing your house or even your city? We'll relocate your rented products for free.</p>
+            </div>
+            <div class="bottom-cards">
+                <img src="./bottom section images/maintenance.svg" alt="err">
+                <h2>Free maintenance</h2>
+                <p>Keeping your rented products in a spick and span condition is on us, so you can sit back and relax.</p>
+            </div>
+            <div class="bottom-cards">
+                <img src="./bottom section images/cancel.svg" alt="err">
+                <h2>Cancel anytime</h2>
+                <p>Pay only for the time you use the product and close your subscription without any hassle.</p>
+            </div>
+            <div class="bottom-cards">
+                <img src="./bottom section images/return.svg" alt="err">
+                <h2>Easy return on delivery</h2>
+                <p>If you don't like the product on delivery, you can return it right away—no questions asked.</p>
+            </div>
+            <div class="bottom-cards">
+                <img src="./bottom section images/upgrade.svg" alt="err">
+                <h2>Keep upgrading</h2>
+                <p>Bored of the same product? Upgrade to try another, newer design and enjoy the change!</p>
+            </div>
+        </div>
+        <a href="">KNOW MORE</a>
+
+        <div id="bottom-cont2">
+            <div id="bottom-cont2-div1">
+                <p id="ptag2">Over 1.5 lac <br> happy subscribers</p>
+                <p id="ptag3">Here's what they have <br> to say about their <br> RentoMojo experience.</p>
+                <button id="bottombtn1"><</button>  <button id="bottombtn2">></button>
+            </div>
+
+            <div id="bottom-cont2-div2">
+             
+                <div class="bottom-cont2-div2-cards">
+                    <!-- append here -->
+                    <div class="bottom-cont2-div2-img">
+                        <!-- img + name  -->
+
+                    </div>
+                    <!-- one ptag here -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div id="footer">
+
+        <div id="footer1">
+            <h4>Choose RentoMojo In Delhi And Enjoy Massive Savings</h4>
+            <p>RentoMojo is a top-rated Indian rental brand, with an established presence across several major cities, including the capital: Delhi! When you purchase furniture, appliances, and electronics from a store, you spend a great deal of money. You can rent the same furniture, appliance, or electronics item from us for a fraction of the retail price. <br>Our inventory includes products made by the best, most reputable brands in the market. Every product undergoes strict quality control checks and is in mint condition. You can rent from us for short term or long term. We have something for every need and budget. <br>When you sign up for any plan, you receive many benefits from us such as free relocation, free maintenance, and damage waiver. You can rent from us online in a matter of minutes. As soon as we receive your order, we will deliver it to your location in Delhi. We offer fast, free delivery all over the capital, including localities such as Nehru Place, Greater Kailash, Hauz Khas, Tilak Nagar, Moti Bagh, and RK Puram.</p>
+            <a>Read More ></a>
+        </div>
+
+        <div id="footer2">
+
+                        <div class="footer2card">
+                            <label class="label1">RENT IT</label>
+                            <a href="">About Us</a>
+                            <a href="">Culture</a>
+                            <a href="">Investors</a>
+                            <a href="">Careers</a>
+                            <a href="">Contact</a>
+                            <a href="">Our Benefits</a>
+                            <a href="">Sitemap</a>
+                        </div>
+
+                        <div class="footer2card">
+                            <label class="label1">INFORMATION</label>
+                            <a href="">Blog</a>
+                            <a href="">FAQs</a>
+                            <a href="">Documents Required</a>
+                        </div>
+
+                        <div class="footer2card">
+                            <label class="label1">POLICIES</label>
+                            <a href="">Shipping Policy</a>
+                            <a href="">Cancellation & return</a>
+                            <a href="">Privacy Policy</a>
+                            <a href="">Rental Terms & Conditions</a>
+                            <a href="">Referral Terms & Conditions</a>
+                        </div>
+
+                        <div class="footer2card">
+                            <label class="label1">NEED HELP ?</label>
+                            <a id="chatwithus">Chat with us (9AM - 6PM)</a>
+                            <div id="planelogo">
+                                <p><svg class='fontawesomesvg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L277.3 424.9l-40.1 74.5c-5.2 9.7-16.3 14.6-27 11.9S192 499 192 488V392c0-5.3 1.8-10.5 5.1-14.7L362.4 164.7c2.5-7.1-6.5-14.3-13-8.4L170.4 318.2l-32 28.9 0 0c-9.2 8.3-22.3 10.6-33.8 5.8l-85-35.4C8.4 312.8 .8 302.2 .1 290s5.5-23.7 16.1-29.8l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+
+                                </p></i> <a href="">jo@rentit.com</a>
+                            </div>
+                           
+
+                            <label for="">DOWNLOAD APP</label>
+
+                            <div id="footer2images">
+                                <img src="./Footer Icon Images/google.svg" alt=""><img src="./Footer Icon Images/download.svg" alt="">
+                            </div>
+                        </div>
+
+        </div>
+
+        <div id="footer3">
+            <label for="">© 2023. Edunetwork Pvt. Ltd.</label>
+
+            <div id="footer3icons">
+                <img src="./Footer Icon Images/facebook.svg" alt="facebook"><img src="./Footer Icon Images/twitter.svg" alt="twitter"><img src="./Footer Icon Images/linkedin.svg" alt="linkedin"><img src="./Footer Icon Images/youtube.svg" alt="youtube"><img src="./Footer Icon Images/instagram.svg" alt="instagram"><img src="./Footer Icon Images/dribble.svg" alt="dribble">
+            </div>
+
+            <a href="">Go Up ^</a>
+        </div>
+
+    </div>
+
+    <img id="chatbot" src="./Footer Icon Images/genie.svg" alt="err">
+
+</body>
+
+<script>
+
+                     // Main Section  Code 
+
+    let slider = document.getElementById("slider");
+
+    let btn1 = document.getElementById("btn1");
+
+    let btn2 = document.getElementById("btn2");
+
+    // let furniture = document.getElementById("furniture");
+    // furniture.addEventListener("click",()=>{
+        
+    // })
+    
+    let arr = ["./content images/AirOKWeb (1).png",
+    "./content images/Fitness-offer-banner-for-Web--2.jpg",
+    "./content images/Paytm-Bank-Desktop-banner- (1).jpg",
+    "./content images/RO-web-banner-web-.jpg",
+    "./content images/WP-Web.png"];
+    let i = 0;
+    let img = document.createElement("img");
+    img.setAttribute("src", arr[i++]);
+
+    setInterval(()=>{
+        img.setAttribute("src", arr[i++]);
+        if( i === 5) i=0;
+    },4000)
+    slider.append(img);
+
+   
+    btn1.addEventListener("click",()=>{
+        if(i === 0) i= 4;
+
+        img.setAttribute("src", arr[i--]);
+        slider.append(img);
+    })
+
+    btn2.addEventListener("click",()=>{
+        if(i === 4) i= 0;
+
+        img.setAttribute("src", arr[++i]);
+        slider.append(img);
+    })
+    
+                            // Middle Section Code
+
+
+
+                            // Bottom Section Code
+
+    let array = [
+        {
+            image: "./bottom section images/kushal-tiwari.jpg",
+            name : "Kushal Tiwari",
+            comment : "Lorem1 ipsum, dolor sit amet consectetur adipisicing elit. Dolor quisquam consequuntur quam omnis nobis possimus reprehenderit nemo deleniti temporibus hic, vel, cumque eius unde saepe odit culpa, fuga laborum labore optio consequatur tempora. Veritatis, praesentium quod! Hic voluptate, odio, iste dignissimos nesciunt incidunt, quisquam nisi cumque delectus ducimus ullam earum quia dolores distinctio ratione atque temporibus voluptatem cum nulla dicta. Quod unde vero aliquid ducimus totam maiores minus.",
+        },
+        {
+            image: "./bottom section images/navin-kumar.jpg",
+            name : "Navin Kumar"+"\n"+"Standup Comedian",
+            comment : "Lorem2 ipsum, dolor sit amet consectetur adipisicing elit. Dolor quisquam consequuntur quam omnis nobis possimus reprehenderit nemo deleniti temporibus hic, vel, cumque eius unde saepe odit culpa, fuga laborum labore optio consequatur tempora. Veritatis, praesentium quod! Hic voluptate, odio, iste dignissimos nesciunt incidunt, quisquam nisi cumque delectus ducimus ullam earum quia dolores distinctio ratione atque temporibus voluptatem cum nulla dicta. Quod unde vero aliquid ducimus totam maiores minus.",
+        },
+        {
+            image: "./bottom section images/anjali-sharma.jpg",
+            name : "Anjali Sharma",
+            comment : "Lorem3 ipsum, dolor sit amet consectetur adipisicing elit. Dolor quisquam consequuntur quam omnis nobis possimus reprehenderit nemo deleniti temporibus hic, vel, cumque eius unde saepe odit culpa, fuga laborum labore optio consequatur tempora. Veritatis, praesentium quod! Hic voluptate, odio, iste dignissimos nesciunt incidunt, quisquam nisi cumque delectus ducimus ullam earum quia dolores distinctio ratione atque temporibus voluptatem cum nulla dicta. Quod unde vero aliquid ducimus totam maiores minus.",
+        },
+        {
+            image: "./bottom section images/shreyas-ravetkar.jpg",
+            name : "Shreyas Ravetkar",
+            comment : "Lorem4 ipsum, dolor sit amet consectetur adipisicing elit. Dolor quisquam consequuntur quam omnis nobis possimus reprehenderit nemo deleniti temporibus hic, vel, cumque eius unde saepe odit culpa, fuga laborum labore optio consequatur tempora. Veritatis, praesentium quod! Hic voluptate, odio, iste dignissimos nesciunt incidunt, quisquam nisi cumque delectus ducimus ullam earum quia dolores distinctio ratione atque temporibus voluptatem cum nulla dicta. Quod unde vero aliquid ducimus totam maiores minus.",
+        },
+        {
+            image: "./bottom section images/nikita-sharma.webp",
+            name : "Nikita Sharma"+"\n"+"Creative Designer",
+            comment : "Lorem5 ipsum, dolor sit amet consectetur adipisicing elit. Dolor quisquam consequuntur quam omnis nobis possimus reprehenderit nemo deleniti temporibus hic, vel, cumque eius unde saepe odit culpa, fuga laborum labore optio consequatur tempora. Veritatis, praesentium quod! Hic voluptate, odio, iste dignissimos nesciunt incidunt, quisquam nisi cumque delectus ducimus ullam earum quia dolores distinctio ratione atque temporibus voluptatem cum nulla dicta. Quod unde vero aliquid ducimus totam maiores minus.",
+        },
+        {
+            image: "./bottom section images/manish-srivastava.webp",
+            name : "Manish Shrivastava",
+            comment : "Lorem6 ipsum, dolor sit amet consectetur adipisicing elit. Dolor quisquam consequuntur quam omnis nobis possimus reprehenderit nemo deleniti temporibus hic, vel, cumque eius unde saepe odit culpa, fuga laborum labore optio consequatur tempora. Veritatis, praesentium quod! Hic voluptate, odio, iste dignissimos nesciunt incidunt, quisquam nisi cumque delectus ducimus ullam earum quia dolores distinctio ratione atque temporibus voluptatem cum nulla dicta. Quod unde vero aliquid ducimus totam maiores minus.",
+        }
+    ]
+
+    let bottombtn2 = document.getElementById("bottombtn2");
+
+    let bottombtn1 = document.getElementById("bottombtn1");
+
+    let imageDiv = document.querySelector(".bottom-cont2-div2-img");
+
+    let cards = document.querySelector(".bottom-cont2-div2-cards");
+
+    let maindiv = document.getElementById("bottom-cont2-div2");
+
+    let j = 0;
+
+    Display(array[j]);
+
+    setInterval(function(){
+
+        if(j === 6) j=0;
+        Display(array[j++]);
+    },4000)
+
+    bottombtn1.addEventListener("click", ()=>{
+        j--;
+        if( j < 0 ) j=5;
+        Display(array[j]);
+    });
+
+    bottombtn2.addEventListener("click", ()=>{
+        if( j === 6 ) j=0;
+        Display(array[j++]);
+    });
+
+    function Display(ele){
+        imageDiv.innerHTML = "";
+        cards.innerHTML = "";
+        let image = document.createElement("img");
+        image.setAttribute("src", ele.image);
+
+        let name = document.createElement("p");
+        name.innerText = ele.name;
+
+        let comment = document.createElement("p");
+        comment.innerText = ele.comment;
+
+        imageDiv.append( image, name );
+
+
+        cards.append(imageDiv , comment);
+
+        maindiv.append(cards);
+
+    }
+
+                            // Footer  Code
+
+
+                            // Login /Signup Code
+
+    
+
+    let popup = document.getElementById("popup");
+
+    let contbtn = document.querySelector(".contbtn");
+    let mobinput = document.getElementById("mob");
+
+    let mobarr = [];
+
+    contbtn.addEventListener("click", ()=>{
+        if(mobinput.value === "")alert("Please enter a moblie no.");
+        else{
+        mobarr.push(mobinput.value);
+        localStorage.setItem("mobile",JSON.stringify(mobarr));
+        alert("mobile added");
+        }
+    })
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }   
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }                    
+
+</script>
+</html>
