@@ -8,7 +8,7 @@
     <style>
           /* Nav Bar  */
 
-          * {
+
             box-sizing: border-box;
         }
         body{
@@ -36,6 +36,7 @@
             background-color: white;
             font-size: 15px;
             color: #313131;
+
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
         #search{
@@ -96,6 +97,197 @@
         .dropdown1:hover .dropdown-content1 {
             display: block;
         }
+
+
+        .status{
+            width: 40%;
+            display: flex;
+            /* border: 1px solid red; */
+        }
+          
+    .status img{
+        width: 15%;
+        margin-right: 15px;
+    }
+    #status1,#status2,#status3{
+        display: flex;
+        align-items: center;
+    }
+    #chatbot{
+        width: 4%;
+        border-radius: 50px;
+        position: fixed;
+        left: 10px;
+        bottom: 10px;
+    }
+    #chatbot:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 500ms;
+    }
+
+                        /* Main Container CSS */
+
+    .heading{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #mainCont{
+        border: 1px solid red;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        
+    }
+    #mainCont1{
+        width: 60%;
+        background-color: rgb(255, 255, 247);
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 25px;
+    }
+    #mainCont1>div{
+        margin-bottom: 30px;
+    }
+    #mainCont1>:nth-child(1){
+        display: flex; align-items: center;
+
+    }
+    #mainCont1>:nth-child(2){
+        display: flex; align-items: center;
+    }
+    #mainCont1>:nth-child(3){
+        display: flex; margin: auto; 
+        justify-content: space-between;
+    }
+
+    #divA img{
+        width: 4%;
+    }
+    #divC img{
+        width: 5%;
+    }
+    #divA span{
+        margin-left: 4px;
+    }
+    #divA input{
+        width: 65%;
+        border: 1px solid rgb(214, 214, 214);
+        border-radius: 5px;
+        font-size: 15px;
+        padding: 5px 20px 5px 20px;
+    }
+    #divA button{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding: 10px 20px 10px 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+        border-radius: 15px;
+        color: white;
+        background-color: rgb(223, 13, 13);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #divC span{
+        margin-left: 10px;
+    }
+    #divC div{
+        display: flex; 
+        align-items: center;
+    }
+    #divC,#divD{
+        width: 48%;
+        background-color: rgb(247, 251, 255);
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px;
+    }
+    #divC>:nth-child(2){
+        margin-bottom: -10px;
+    }
+    #divC>:nth-child(3){
+        display: flex; margin: auto; justify-content: space-between;
+        padding: 15px 20px 5px 20px;
+        margin-top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+    }
+    #divC>:nth-child(4){
+        display: flex; margin: auto; justify-content: space-between;
+        margin-top: 20px;
+        padding: 15px 20px 5px 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+    }
+    #divD>:nth-child(2){
+        display: flex; margin: auto; justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px 5px 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        margin-top: -8px;
+    }
+    #divD>:nth-child(3){
+        display: flex; margin: auto; justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px 5px 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    #divD>:nth-child(4){
+        display: flex; margin: auto; justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px 5px 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    #divE{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 30px;
+        padding: 10px 20px 10px 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+        border-radius: 15px;
+        color: white;
+        background-color: rgb(223, 13, 13);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #divA button:hover,#divE:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 500ms;
+        background-color: rgb(14, 156, 250);
+    }
+    hr{
+    height: 1px;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    }
+
+    .div3>img{
+        width: 5%;
+        /* display: none; */
+        /* border: 5px solid red; */
+    }
+
+    #mainCont2{
+        width: 50%;
+        border: 1px solid blue;
+    }
+
+    #mainCont2 img{
+        width: 50%;
+    }
+
+                
+    
+
 
                                      /* Login Css */
 
@@ -161,6 +353,7 @@
         font-size: 25px;
         cursor: pointer;
     }
+
     </style>
 </head>
 <body>
@@ -171,8 +364,7 @@
                 <img src="./RENT IT (2).png" alt="error">
                 <div class="dropdown">
                     <button class="dropbtn">Select A City</button>
-                        <!-- <input type="search" placeholder="Search for city" size="60">
-                        <div id="city-cards">
+
         
                             <div class="city">
                                 <img src="" alt="">
@@ -239,6 +431,216 @@
                                 <h3>Kolkata</h3>
                             </div>
         
+
+                        </div>  -->
+
+                </div>
+                <div class="status">
+                    <div id="status1">
+                        <img src="./icons/tick.svg" alt="">
+                        <label for="">Checkout -------</label>
+                    </div>
+                    <div id="status2">
+                        <img src="./icons/tick 2.svg" alt="">
+                        <label for="">Verification -------</label>
+                    </div>
+                    <div id="status3">
+                        <img src="./icons/tick 2.svg" alt="">
+                        <label for="">Delivery</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+    </div>
+
+    <div id="mainCont">
+        <div id="mainCont1">
+
+            <div>
+                <div id="divA">
+
+                    <div style="display: flex; align-items:center;">
+                        <img src="./bottom section images/location.svg" alt=""><span class="heading">Delivery Address</span>
+                    </div>
+
+                    <input type="text" id="address" placeholder="Enter your Address">
+                    <button id="submit">Submit</button>
+
+                </div>
+
+                <div id="divB">
+                    <img src="./cart images/address.svg" alt="">
+                </div>
+
+            </div>
+            <hr>
+            <div>
+                
+                    <div id="divC">
+                        <div>
+                            <img src="./cart images/page.svg" alt="">
+                            <span class="heading">Order Summary</span>
+                        </div>
+                
+                        <p class="heading">Payable Now</p>
+
+                        <div>
+                            <p>Refundable Deposit</p> <span id="RefundDepo">0</span>
+                        </div>
+
+                        <div>
+                            <p>Delivery Charges</p><span id="DelivCharge">0</span>
+                        </div>
+                        
+                    </div>
+                    <div id="divD">
+                        <p class="heading">Monthly Payable</p>
+                        <div>
+                            <p>Products Rent</p> <span id="ProdRent">0</span>  
+                        </div>
+                        
+                        <div>
+                            <p>GST</p><span id="gst">0</span>
+                        </div>
+
+                        <div>
+                            <p class="heading">Total Monthly Rent</p><span id="MonthTotal">0</span>
+                        </div>
+                        
+                    </div>
+
+            </div>
+
+            <div>
+                <button id="divE">Proceed</button>
+            </div>
+        </div>
+
+        <div id="mainCont2">
+            <!-- Append from JS here  -->
+        </div>
+    </div>
+
+    <img id="chatbot" src="./Footer Icon Images/genie.svg" alt="err">
+    
+</body>
+
+<script>
+
+
+                        // Address Code
+
+    let address = document.getElementById("address");
+   
+    let addressData = JSON.parse(localStorage.getItem("address")) || [];
+
+   
+    let submit = document.getElementById("submit");
+
+    submit.addEventListener("click",()=>{
+        if( address.value === "" )
+        {
+            alert("Please provide an Address !");
+        }
+        else{
+            if(checkDuplicate(addressData)){
+                alert("Address already added !");
+            }
+            else{
+                addressData.push(address.value);
+                localStorage.setItem("address", JSON.stringify(addressData));
+                 alert("Address Added !");
+            }
+        }
+    })
+
+    function checkDuplicate(addressData){
+        for( let i =0 ; i<addressData.length ; i++)
+        {
+            if(address.value === addressData[i])
+            {
+                return true ;
+            }
+        }
+        return false;
+    }
+
+
+                    // Appending Card data
+                    
+    let mainCont2 = document.getElementById("mainCont2");
+
+    let cartData = JSON.parse(localStorage.getItem("cartData"));
+
+    Display(cartData);
+    
+function Display(data){
+
+        mainCont2.innerHTML="";
+
+        data.forEach(ele => {
+
+        let card = document.createElement("div");
+        card.classList.add("card");
+
+        let div1 = document.createElement("div");
+        div1.classList.add("div1");
+
+        let div2 = document.createElement("div");
+        div2.classList.add("div2");
+
+        let div3 = document.createElement("div");
+        div3.classList.add("div3");
+
+        let div4 = document.createElement("div");
+        div4.classList.add("div4");
+
+        let image = document.createElement("img");
+        image.setAttribute("src", ele.image);
+
+        let name = document.createElement("h3");
+        name.innerText = ele.title;
+
+        let rate = document.createElement("h4");
+        rate.innerText = ele.rate+"/ mo";
+
+        let days = document.createElement("h4");
+        days.innerText = ele.days+" days";
+
+        let increbtn = document.createElement("button");
+        increbtn.innerText = "+";
+
+        let counter = document.createElement("p");
+        counter.innerText = 0 ;
+
+        let decrebtn = document.createElement("button");
+        decrebtn.innerText = "-";
+
+        let delbtn = document.createElement("img");
+        delbtn.setAttribute("src","./icons/delete.svg");
+        delbtn.classList.add("deletebtn");
+
+        delbtn.addEventListener("click",()=>{
+        
+         
+        });
+
+        div4.append( increbtn , counter , decrebtn );
+        div3.append( div4 , delbtn );
+        div2.append( name ,rate ,days );
+        div1.append( image , div2 );
+        card.append( div1 ,div3 );
+        mainCont2.append( card );
+
+        });
+
+}
+
+
+
+</script>
                         </div> -->
                 </div>
                 <input type="search" placeholder="Search for products" id="search" size="60">
@@ -276,4 +678,5 @@
     </div>
     
 </body>
+
 </html>
