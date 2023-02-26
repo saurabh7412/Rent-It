@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+</head>
+<body>
+    <input id="inp" type="text" placeholder="search">
+    <button id="search">Search</button>
+</body>
+
+<script>
+
+
+    let api = `./products.json`;
+
+    let fetchedData = [];
+
+    fetch(api)
+    .then((res)=>{
+        return res.json();
+    })
+    .then((data)=>{
+        fetchedData = data;
+        console.log(fetchedData);
+        console.log(fetchedData[5].title);
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
+
+ let searchinp = document.getElementById("inp");
+
+ let searchbtn = document.getElementById("search");
+
+ searchbtn.addEventListener("click",()=>{
+   let filtered =  fetchedData.filter((ele)=>{
+        return ele.title.toLowerCase() === searchinp.value.toLowerCase();
+    })
+    if(filtered.length === 0)
+    {
+        console.log("Not found !");
+    }
+    else{
+    console.log(filtered);
+    }
+ })
+
+</script>
+</html>

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<style>
+                    /* Nav Bar  */
+
+                    * {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px 0px 0px 0px;
+        }
+        #navcont{
+            width: 100%;
+            background-color: white;
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #nav{
+            width: 75%;
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+            align-items: center;  
+            background-color: white;
+        }
+        #nav>img{
+            width: 12%;
+        }
+        .dropbtn{
+            border: none;
+            background-color: white;
+            font-size: 15px;
+            color: #313131;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #search{
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid grey;
+            background-color: rgb(240, 247, 250);
+            color: #313131;
+            font-size: 17px;
+            padding: 0px 50px 0px 18px;
+        }
+        #cart{
+            border: none;
+            color: #313131;
+            background-color: white;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .dropdown1 {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn1 {
+            background-color: rgba(209, 13, 13, 0.882);
+            border: 1px solid rgb(154, 154, 154);
+            border-radius: 10px;
+            color: white;
+            padding: 10px 15px 10px 15px;
+            font-size: 14px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .dropbtn1:hover{
+            color: rgba(209, 13, 13, 0.882);
+            background-color: white;
+        }
+        .dropdown-content1 {
+            display: none;
+            position: absolute;
+            top: 30px;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content1 a {
+            color: #313131;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content1 a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown1:hover .dropdown-content1 {
+            display: block;
+        }
+
+                                  /* Login Css */
+
+    .popup{
+        width: 100%;
+        display: flex;
+        /* margin: auto;  */
+        width: 800px;
+        position: absolute;
+        top: 400%;
+        left: -700%;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        background-color: #ddd;
+        visibility: hidden;
+    }
+    .open-popup{
+        visibility: visible;
+    }
+    #login{
+        width: 50%;
+        background-color: rgb(236, 248, 255);
+        border-radius: 10px;
+        padding: 30px;
+        /* text-align: center; */
+    }
+    #login>h3{
+        font-size: 15px;
+        margin-top: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-bottom: 30px;
+    }
+    #loginimg>img{
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    #mob{
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        display: block;
+    }
+    .contbtn{
+        display: flex;
+        margin: auto;
+        background-color: rgba(192, 12, 12, 0.922);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        margin-top: 350px;
+        height: 50px;
+        width: 100%;
+        padding: 5px 50px 15px 90px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+    }
+    #crossbtn{
+        display: flex;
+        justify-content: end;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+
+                                       /* Nav bar 2 */
+
+    #navcont2{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        padding: 20px;
+        padding-left: 200px;
+        padding-right: 200px;
+        background-color: rgb(238, 238, 238);
+        
+    }
+    #navcont2 a{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        color: rgb(145, 145, 145);
+    }
+    #navcont2 a:hover{
+        color: rgb(204, 19, 19);
+        scale: 1.1;
+    }
+    
+
+    #nav2div1{
+        /* border: 1px solid red; */
+        width: 12%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #nav2div2{
+        /* border: 1px solid red; */
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navigation{
+        width: 100%;
+        position: fixed;
+        top: 0%;
+
+    }
+
+                                       /* Footer  */
+
+    .fontawesomesvg {width: 1em;
+      height: 1em;
+      vertical-align: -.125em;
+      margin-right: 20px;
+    }
+
+    #footer{
+        padding-top: 50px;
+        background-color: rgb(246, 246, 246);
+        margin-top: 50px;
+    }
+    #footer1{
+        /* border: 2px solid green; */
+        width: 80%;
+        margin: auto;
+        margin-top: 70px;
+        padding-bottom: 70px;
+    }
+    #footer1>h4{
+        color: rgb(113, 113, 113);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14px;
+    }
+    #footer1>p,a{
+        color: rgb(113, 113, 113);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 14px;
+    }
+    #footer2{
+        /* border: 2px solid blue; */
+        width: 80%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        padding-bottom: 70px;
+    }
+    .footer2card{
+        width: 23%;
+        /* border: 1px solid red; */
+    }
+    #planelogo{
+        display: flex;
+
+        align-items: center;
+    }
+    .footer2card>a,label{
+        display: block;
+        margin: 20px auto 20px auto;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+    }
+    #footer2images>img{
+        width: 45%;
+        margin: 10px 5px 10px 0px;
+    }
+    #chatwithus{
+        border: 1px solid grey;
+        padding: 10px 20px 10px 20px;
+        border-radius: 5px;
+        margin-right: 80px;
+    }
+    #footer3{
+        width: 80%;
+        display: flex;
+        margin: auto;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    #footer3>label{
+        /* margin-right: 400px; */
+        width: 40%;
+        color: grey;
+        font-size: 14px;
+    }
+    #footer3>a{
+        width: 35%;
+        text-align: end;
+        text-decoration: none;
+    }
+    #footer3icons{
+        width: 30%;
+        margin: auto;
+    }
+    #footer3icons>img{
+        width: 10%;
+        margin-right: 20px;
+    }
+    #chatbot{
+        width: 4%;
+        border-radius: 50px;
+        position: fixed;
+        left: 10px;
+        bottom: 10px;
+    }
+    #chatbot:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 500ms;
+    }
+
+                            /* main container CSS */
+
+
+    #mainCont{
+        
+        width: 80%;
+        display: flex;
+        margin: auto;
+        margin-top: 110px;
+        justify-content: space-evenly;
+    }
+
+    #mainCont1{
+        
+        width: 23%;
+    }
+    #mainCont1 a{
+        text-decoration: none;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #div1,#div2,#div3,#div4,#div5,#div6{
+        padding: 15px;
+    }
+
+    #mainCont2{
+        
+        width: 70%;
+        height: fit-content;
+        
+    }
+
+    #div1{
+        display: flex;
+        align-items: center;
+       
+    }
+    #div1>label{
+        margin-left: 4px;
+        font-size: 20px;
+    }
+    #div1>button{
+        padding: 5px 15px 5px 15px;
+        font-size: 15px;
+        color: grey;
+        background-color: white;
+        border: 1px solid grey;
+        border-radius: 2px ;
+    }
+    #div2,#div3,#div4,#div5,#div6{
+        border: 1px solid rgb(205, 205, 205);
+        border-radius: 2px ;
+        margin-bottom: 15px;
+        padding-top: 0px;
+    }
+    #div2>div{
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+    }
+    #div2>div>a{
+        text-decoration: none;
+    }
+    input[type="range"] {
+     width:100%;
+    }
+    #div2,#div3,#div4,#div5,#div6 label{
+        color: rgb(78, 78, 78);
+    }
+    #div6 h3,label{
+        color: rgb(78, 78, 78);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #mainCont2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        margin-top: 92px;
+    }
+
+    .card{
+        width: 100%;
+        /* border: 1px solid blue; */
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    .card>img{
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: -10px;
+        
+    }
+
+    .carddiv{
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: -15px;
+        font-size: 15px;
+        align-items: center;
+    }
+    .carddiv>button{
+        color: white;
+        border: none;
+        background-color: rgba(203, 2, 2, 0.993);
+        margin-right: 10px;
+        padding: 5px 10px 5px 10px ;
+    }
+    .carddiv>button:hover{
+        transform: scale(1.1);
+        transition: 300ms;
+        background-color: rgb(30, 93, 202);
+    }
+    #filter{
+        border-radius: 10px;
+        border: none;
+        color: white;
+        background-color: rgba(203, 2, 2, 0.993);
+        font-size: 20px;
+        padding: 10px 15px 10px 20px;
+        display: flex;
+        margin-top: 20px;
+        margin-right: -200px;
+        cursor: pointer;
+    }
+    #filter>option{
+        font-size: 17px;
+        color: black;
+        background-color:rgb(239, 247, 255);
+        
+
+    }
+
+    #searchbtn{
+        cursor: pointer;
+        font-size: 20px;
+        background-color: rgba(203, 2, 2, 0.993);
+        color: white;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+    }
+
+</style>
+
+<body>
+<div id="navigation">
+    <div id="navcont">
+        <div id="nav">
+            <img src="./RENT IT (2).png" alt="error">
+            <div class="dropdown">
+                <button class="dropbtn">Select A City</button>
+                    <!-- <input type="search" placeholder="Search for city" size="60">
+                    <div id="city-cards">
+    
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Banglore</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Mumbai</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Pune</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Delhi</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Noida</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Gurgaon</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Hyderabad</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Chennai</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Ahmedabad</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Mysore</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Jaipur</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Faridabad</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Ghaziabad</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Gandhinagar</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Chandigarh</h3>
+                        </div>
+                        <div class="city">
+                            <img src="" alt="">
+                            <h3>Kolkata</h3>
+                        </div>
+    
+                    </div> -->
+            </div>
+            <input type="searchinp" placeholder="Search for products" id="search" size="40"><a id="searchbtn">Search</a>
+    
+            <a style="text-decoration: none;" href="./cart.html" id="cart">Cart</a>
+    
+            <div class="dropdown1">
+                <a class="dropbtn1" onclick="openPopup()">Login / Signup</a>
+    
+                <div class="popup" id="popup">
+    
+                    <!-- add everything we need on login page here  -->
+                    <div id="loginimg">
+                        <img src="./icons/login cat.jpg" alt="err"> 
+                    </div>
+                    <div id="login">
+                        <a id="crossbtn" onclick="closePopup()">X</a>
+                        <h3>Enter your number to <br> Signup or Login</h3>
+                        <input type="text" id="mob" placeholder="Enter your phone number*">
+                        <button class="contbtn">Continue</button>
+                    </div>
+    
+                </div>
+    
+    
+    
+    
+                <div class="dropdown-content1">
+                  <a href="#">My Account</a>
+                  <a href="#">My Wishlist</a>
+                  <a href="#">Settings</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <div id="navcont2">
+        <div id="nav2div1">
+            <a href="./index.html">Home ></a>
+            <a href="">Furniture ></a>
+        </div>
+    
+        <div id="nav2div2">
+            <a href="">Packages</a><a href="">Furniture</a><a href="">Appliances</a><a href="">Electronics</a><a href="">Fitness</a>
+        </div>
+       
+    </div>
+</div>
+
+<div id="mainCont">
+    <div id="mainCont1">
+        <div id="div1">
+               <img style="width: 7%;" src="./icons/filter.svg" alt="">
+               <label for="">Filters</label>
+               <button >Reset</button>
+        </div>
+        <div id="div2">
+            <label for="">CHOOSE RENTAL TENURE</label>
+            <input type="range" min="0" max="12" width>
+            <div><a href="">3+</a><a href="">6+</a><a href="">12+</a></div>   
+        </div>
+        <div id="div3">
+            <label for="">ROOMS</label>
+            <input type="checkbox"> <a href="" class="cb">Bedroom</a> <br>
+            <input type="checkbox"> <a href="" class="cb">Living Room</a> <br>
+            <input type="checkbox"> <a href="" class="cb">Baby Furniture</a> <br>
+            <input type="checkbox"> <a href="" class="cb">Kitchen & Dining</a> <br>
+            <input type="checkbox"> <a href="" class="cb">Work From Home(WFH)</a>
+        </div>
+        <div id="div4">
+            <label for="">PRODUCT TYPE</label>
+            <input type="checkbox"> <a href="" class="cb">Mattresses (24)</a> <br>
+            <input type="checkbox"> <a href="" class="cb">Beds (23)</a> <br>
+            <input type="checkbox"> <a href="" class="cb">Wardrobe & Organizer (13)</a> <br>
+            <input type="checkbox"> <a href="" class="cb">Bedside Tables</a> <br>
+            <input type="checkbox"> <a href="" class="cb">Chest of Drawers (4)</a>
+        </div>
+        <div id="div5">
+            <label for="">PRODUCT TYPE</label>
+            <input type="checkbox"> <a href="" class="cb">Out of Stock</a>
+        </div>
+        <div id="div6">
+            <h3>What do you want us to launch next ?</h3>
+            <label for="">Suggest us a product</label>
+            <input type="text" placeholder="Your suggestion">
+            <button>Submit</button>
+        </div>
+    </div>
+    <div>
+        <select name="" id="filter">
+            <option value="">Filter by-</option>
+            <option value="Outdoors">Outdoors</option>
+            <option value="Tools">Tools</option>
+            <option value="Computers">Computers</option>
+            <option value="Health">Health</option>
+            <option value="Beauty">Beauty</option>
+        </select>
+    </div>
+    <div id="mainCont2">
+        <!-- Append from js here -->
+
+    </div>
+</div>
+
+                            <!-- Footer -->
+
+  <div id="footer">
+
+    <div id="footer1">
+        <h4>Choose RentoMojo In Delhi And Enjoy Massive Savings</h4>
+        <p>RentoMojo is a top-rated Indian rental brand, with an established presence across several major cities, including the capital: Delhi! When you purchase furniture, appliances, and electronics from a store, you spend a great deal of money. You can rent the same furniture, appliance, or electronics item from us for a fraction of the retail price. <br>Our inventory includes products made by the best, most reputable brands in the market. Every product undergoes strict quality control checks and is in mint condition. You can rent from us for short term or long term. We have something for every need and budget. <br>When you sign up for any plan, you receive many benefits from us such as free relocation, free maintenance, and damage waiver. You can rent from us online in a matter of minutes. As soon as we receive your order, we will deliver it to your location in Delhi. We offer fast, free delivery all over the capital, including localities such as Nehru Place, Greater Kailash, Hauz Khas, Tilak Nagar, Moti Bagh, and RK Puram.</p>
+        <a>Read More ></a>
+    </div>
+
+    <div id="footer2">
+
+                    <div class="footer2card">
+                        <label class="label1">RENT IT</label>
+                        <a href="">About Us</a>
+                        <a href="">Culture</a>
+                        <a href="">Investors</a>
+                        <a href="">Careers</a>
+                        <a href="">Contact</a>
+                        <a href="">Our Benefits</a>
+                        <a href="">Sitemap</a>
+                    </div>
+
+                    <div class="footer2card">
+                        <label class="label1">INFORMATION</label>
+                        <a href="">Blog</a>
+                        <a href="">FAQs</a>
+                        <a href="">Documents Required</a>
+                    </div>
+
+                    <div class="footer2card">
+                        <label class="label1">POLICIES</label>
+                        <a href="">Shipping Policy</a>
+                        <a href="">Cancellation & return</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Rental Terms & Conditions</a>
+                        <a href="">Referral Terms & Conditions</a>
+                    </div>
+
+                    <div class="footer2card">
+                        <label class="label1">NEED HELP ?</label>
+                        <a id="chatwithus">Chat with us (9AM - 6PM)</a>
+                        <div id="planelogo">
+                            <p><svg class='fontawesomesvg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L277.3 424.9l-40.1 74.5c-5.2 9.7-16.3 14.6-27 11.9S192 499 192 488V392c0-5.3 1.8-10.5 5.1-14.7L362.4 164.7c2.5-7.1-6.5-14.3-13-8.4L170.4 318.2l-32 28.9 0 0c-9.2 8.3-22.3 10.6-33.8 5.8l-85-35.4C8.4 312.8 .8 302.2 .1 290s5.5-23.7 16.1-29.8l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+
+                            </p></i> <a href="">jo@rentit.com</a>
+                        </div>
+                       
+
+                        <label for="">DOWNLOAD APP</label>
+
+                        <div id="footer2images">
+                            <img src="./Footer Icon Images/google.svg" alt=""><img src="./Footer Icon Images/download.svg" alt="">
+                        </div>
+                    </div>
+
+    </div>
+
+    <div id="footer3">
+        <label for="">© 2023. Edunetwork Pvt. Ltd.</label>
+
+        <div id="footer3icons">
+            <img src="./Footer Icon Images/facebook.svg" alt="facebook"><img src="./Footer Icon Images/twitter.svg" alt="twitter"><img src="./Footer Icon Images/linkedin.svg" alt="linkedin"><img src="./Footer Icon Images/youtube.svg" alt="youtube"><img src="./Footer Icon Images/instagram.svg" alt="instagram"><img src="./Footer Icon Images/dribble.svg" alt="dribble">
+        </div>
+
+        <a href="">Go Up ^</a>
+    </div>
+
+</div>
+
+<img id="chatbot" src="./Footer Icon Images/genie.svg" alt="err">
+
+    
+</body>
+
+<script>
+
+ let cartData = [];
+ let fetchedData = [];
+
+ let mainCont2 = document.getElementById("mainCont2");
+
+    let APIURL = "./products.json";
+
+    fetch(APIURL)
+    .then((res)=>{
+        return res.json();
+    })
+    .then((data)=>{
+        fetchedData= data;
+        console.log(fetchedData);
+
+        Display(fetchedData);
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
+
+                    //   Search Functionality
+
+let searchinp = document.getElementById("search");
+
+
+
+let searchbtn = document.getElementById("searchbtn");
+
+searchbtn.addEventListener("click",()=>{
+  
+   let filtered =  fetchedData.filter((ele)=>{
+        return ele.title.toLowerCase() === searchinp.value.toLowerCase();
+    })
+    if(filtered.length === 0)
+    {
+        alert("Not found !");
+    }
+    else{
+    Display(filtered);
+    }
+ })
+
+ 
+
+
+    function Display(data){
+
+        mainCont2.innerHTML="";
+
+    data.forEach(ele => {
+        
+        let card = document.createElement("div");
+        card.classList.add("card");
+
+        let carddiv = document.createElement("div");
+        carddiv.classList.add("carddiv");
+        
+        let image = document.createElement("img");
+        image.setAttribute("src", ele.image);
+
+        let name = document.createElement("h3");
+        name.innerText = ele.title;
+
+        let rate = document.createElement("h4");
+        rate.innerText = ele.rate+"/ mo";
+
+        let days = document.createElement("h4");
+        days.innerText = ele.days+" days";
+
+        let addbtn = document.createElement("button");
+        addbtn.innerText = "Add to Cart";
+
+        addbtn.addEventListener("click",()=>{
+          cartData.push({...ele,quantity:1});
+          alert("Added to Cart !");
+          localStorage.setItem("cartData",JSON.stringify(cartData));
+        })
+
+
+        carddiv.append( rate, addbtn, days )
+
+        card.append( image, name, carddiv );
+
+        mainCont2.append( card );
+    });
+
+    }
+
+                             // Login /Signup Code
+
+    
+
+let popup = document.getElementById("popup");
+
+let contbtn = document.querySelector(".contbtn");
+let mobinput = document.getElementById("mob");
+
+let mobarr = [];
+
+contbtn.addEventListener("click", ()=>{
+    if(mobinput.value === "")alert("Please enter a moblie no.");
+    else{
+    mobarr.push(mobinput.value);
+    localStorage.setItem("mobile",mobarr);
+    alert("mobile added");
+    }
+})
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}   
+function closePopup(){
+    popup.classList.remove("open-popup");
+}  
+
+
+                    // Filter JS
+
+
+let filter = document.getElementById("filter");
+
+        filter.addEventListener("change",()=>{
+           let filtered = fetchedData.filter((e)=>{
+            if(filter.value === "")
+            {
+               return fetchedData;
+            }
+            else{
+                return e.title === filter.value;
+            }
+            })
+            Display(filtered);
+        })
+
+
+
+</script>
+</html>
