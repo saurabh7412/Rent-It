@@ -1,0 +1,49 @@
+[{"id":1,"title":"Outdoors","image":"./mid section images/1.jpg","rate":"1000","days":4},
+
+{"id":2,"title":"Automotive","image":"./mid section images/2.jpg","rate":"800","days":3},
+
+{"id":3,"title":"Computers","image":"./mid section images/3.jpg","rate":"750","days":3},
+
+{"id":4,"title":"Outdoors","image":"./mid section images/4.jpg","rate":"945","days":3},
+
+{"id":5,"title":"Sports","image":"./mid section images/5.jpg","rate":"650","days":1},
+
+{"id":6,"title":"Tools","image":"./mid section images/6.jpg","rate":"850","days":2},
+
+{"id":7,"title":"Computers","image":"./mid section images/7.jpg","rate":"760","days":1},
+
+{"id":8,"title":"Computers","image":"./mid section images/8.jpg","rate":"846","days":3},
+
+{"id":9,"title":"Outdoors","image":"./mid section images/9.jpg","rate":"945","days":3},
+
+{"id":10,"title":"Health","image":"./mid section images/10.jpg","rate":"1000","days":1},
+
+{"id":11,"title":"Tools","image":"./mid section images/11.jpg","rate":"800","days":1},
+
+{"id":12,"title":"Music","image":"./mid section images/12.jpg","rate":"946","days":1},
+
+{"id":13,"title":"Tools","image":"./mid section images/13.jpg","rate":"400","days":1},
+
+{"id":14,"title":"Beauty","image":"./mid section images/14.jpg","rate":"740","days":3},
+
+{"id":15,"title":"Outdoors","image":"./mid section images/15.jpg","rate":"864","days":1},
+
+{"id":16,"title":"Beauty","image":"./mid section images/16.jpg","rate":"600","days":3},
+
+{"id":17,"title":"Computers","image":"./mid section images/17.jpg","rate":"540","days":1},
+
+{"id":18,"title":"Health","image":"./mid section images/18.jpg","rate":"879","days":3},
+
+{"id":19,"title":"Beauty","image":"./mid section images/19.jpg","rate":"999","days":2},
+
+{"id":20,"title":"Beauty","image":"./mid section images/20.jpg","rate":"1000","days":2},
+
+{"id":21,"title":"Books","image":"./mid section images/21.jpg","rate":"800","days":2},
+
+{"id":22,"title":"Health","image":"./mid section images/22.jpg","rate":"900","days":3},
+
+{"id":23,"title":"Movies","image":"./mid section images/23.jpg","rate":"200","days":3},
+
+{"id":24,"title":"Outdoors","image":"./mid section images/24.jpg","rate":"450","days":3},
+
+{"id":25,"title":"Beauty","image":"./mid section images/25.jpg","rate":"750","days":2}]
