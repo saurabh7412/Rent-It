@@ -12,12 +12,14 @@ Original-Website-Link : https://www.urbanladder.com/
 Cloned-Website: https://spontaneous-speculoos-88fec1.netlify.app/
 
 ## Landing Page
-![Screenshot 2023-05-30 144644](https://github.com/saurabh7412/dusty-record-6347/assets/121215502/a12d7302-e0bd-4700-ad4d-72467fb33f75)
+
+![Screenshot 2023-05-30 144644](https://github.com/saurabh7412/dusty-record-6347/assets/121215502/8b764bf5-6c0d-4f40-a4f0-b68352c6e741)
 
 
 
 ## Product Page
-![Screenshot 2023-05-30 144730](https://github.com/saurabh7412/dusty-record-6347/assets/121215502/a8344dd5-376f-48e8-abee-56039d4c7260)
+
+![Screenshot 2023-05-30 144730](https://github.com/saurabh7412/dusty-record-6347/assets/121215502/518e6152-c657-4c90-8f50-5a2d01f21276)
 
 
 
